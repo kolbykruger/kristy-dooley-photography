@@ -4,12 +4,8 @@
 
 
     .container {
-        display: none;
         padding: 0;
-
-        &.slick-initialized {
-            display: block;
-        }
+        max-width: 100%;
     }
 
     .slide {

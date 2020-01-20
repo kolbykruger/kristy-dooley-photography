@@ -17,7 +17,7 @@
 .nav a {
     @include fs(16px);
     display: block;
-    color: $color-0;
+    color: #fff;
     text-decoration: none;
     transition: $transition-1;
 }

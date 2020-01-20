@@ -676,6 +676,15 @@ hr::before {
   color: #fff;
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom, #000, transparent);
+}
+
 .header .container {
   position: relative;
 }
@@ -686,7 +695,7 @@ hr::before {
 }
 
 .header .logo {
-  max-width: 240px;
+  max-width: 300px;
 }
 
 .header .logo a {
@@ -771,7 +780,7 @@ hr::before {
   font-size: 16px;
   font-size: 1rem;
   display: block;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   transition: 250ms ease;
 }
@@ -1342,12 +1351,8 @@ input[type="submit"].button {
 }
 
 .carousel .container {
-  display: none;
   padding: 0;
-}
-
-.carousel .container.slick-initialized {
-  display: block;
+  max-width: 100%;
 }
 
 .carousel .slide {
