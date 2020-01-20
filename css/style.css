@@ -681,8 +681,7 @@ hr::before {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.15);
-  background: linear-gradient(to bottom, #000, transparent);
+  z-index: 10;
 }
 
 .header .container {
@@ -691,7 +690,7 @@ hr::before {
 
 .header .group {
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .header .logo {
@@ -1356,8 +1355,24 @@ input[type="submit"].button {
 }
 
 .carousel {
+  position: relative;
   margin: 0 auto;
   user-select: none;
+  max-height: 100vh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.carousel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), transparent);
+  z-index: 1;
 }
 
 .carousel .container {
@@ -1365,86 +1380,16 @@ input[type="submit"].button {
   max-width: 100%;
 }
 
-.carousel .slide {
-  user-select: none;
-  width: 100%;
-  position: relative;
-  outline: none;
-}
-
-.carousel .slide.slick-current {
-  z-index: 100;
-}
-
-.carousel .slide a {
+.carousel a {
   user-select: none;
   text-decoration: none;
 }
 
-.carousel .slide img {
+.carousel img {
   user-select: none;
   width: 100%;
   height: auto;
-}
-
-.carousel .slide .info {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  color: #fff;
-  padding: 2em;
-  text-align: center;
-}
-
-.carousel .slide .title {
-  margin: 0;
-  font-weight: 600;
-}
-
-.carousel .slide .title {
-  font-size: 1.75rem;
-}
-
-@media screen and (min-width: 38rem) {
-  .carousel .slide .title {
-    font-size: calc(1.75rem + 1.25 * ((100vw - 38rem) / 32));
-  }
-}
-
-@media screen and (min-width: 70rem) {
-  .carousel .slide .title {
-    font-size: 3rem;
-  }
-}
-
-.carousel .slide .description {
-  font-weight: 500;
-}
-
-.carousel .slide .description {
-  font-size: 1rem;
-}
-
-@media screen and (min-width: 38rem) {
-  .carousel .slide .description {
-    font-size: calc(1rem + 0.75 * ((100vw - 38rem) / 32));
-  }
-}
-
-@media screen and (min-width: 70rem) {
-  .carousel .slide .description {
-    font-size: 1.75rem;
-  }
-}
-
-.carousel .slide .button {
-  margin: 0.5em 0;
-}
-
-.carousel > li:only-child {
-  display: none;
+  opacity: 0.85;
 }
 
 .slick-arrows .prev,

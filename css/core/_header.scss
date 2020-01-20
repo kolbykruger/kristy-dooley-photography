@@ -3,8 +3,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0,0,0,0.15);
-    background: linear-gradient(to bottom, #000, transparent);
+    //background: rgba(0,0,0,0.15);
+    //background: linear-gradient(to bottom, #000, transparent);
+    z-index: 10;
 
     .container {
         position: relative;
@@ -12,7 +13,7 @@
 
     .group {
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .logo {
