@@ -20,6 +20,10 @@
     color: #fff;
     text-decoration: none;
     transition: $transition-1;
+
+    &.button {
+        color: $color-0;
+    }
 }
 
 .nav a:hover,
@@ -77,6 +81,7 @@
     @include fs(13px);
     padding: 10px;
     margin: 0;
+    color: $color-0;
 }
 
 .nav ul ul a:hover,

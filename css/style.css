@@ -785,6 +785,10 @@ hr::before {
   transition: 250ms ease;
 }
 
+.nav a.button {
+  color: #000;
+}
+
 .nav a:hover,
 .nav a:focus {
   color: #ef4538;
@@ -838,6 +842,7 @@ hr::before {
   font-size: 0.8125rem;
   padding: 10px;
   margin: 0;
+  color: #000;
 }
 
 .nav ul ul a:hover,
@@ -1323,6 +1328,11 @@ p.simplesearch-results,
 .button-text {
   color: #ef4538;
   background: transparent;
+}
+
+.button-white {
+  color: #000;
+  background: #fff;
 }
 
 @media (max-width: 768px) {
