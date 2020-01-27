@@ -37,7 +37,8 @@ html.wf-inactive {
 
 body {
     color: $color-0;
-    background: $color-grey-1;
+    background-color: $color-grey-1;
+    background-image: url(../images/marble.jpg);
     font-family: 'Open Sans', sans-serif;
     @include fs(16px);
 }

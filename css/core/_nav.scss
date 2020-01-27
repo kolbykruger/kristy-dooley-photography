@@ -15,8 +15,12 @@
 }
 
 .nav a {
+
+    &:not(.button) {
+        display: block;
+    }
+
     @include fs(18px);
-    display: block;
     color: #fff;
     text-decoration: none;
     transition: $transition-1;
