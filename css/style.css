@@ -1065,15 +1065,30 @@ body.menu-open .mobile_nav {
 }
 
 footer {
+  position: relative;
   width: 100%;
-  background: #3b3c3e;
   padding: 3em 1em;
   padding-bottom: 2em;
   margin: 0;
 }
 
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/patterns/background.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 footer .container {
-  color: #fff;
+  color: #3b3c3e;
 }
 
 footer .footer-section {
@@ -1081,7 +1096,7 @@ footer .footer-section {
 }
 
 footer a {
-  color: #fff;
+  color: #3b3c3e;
 }
 
 footer .social-icons {
@@ -1090,9 +1105,10 @@ footer .social-icons {
 }
 
 footer .social-icons a {
-  color: #3b3c3e;
-  background: #fff;
+  color: #fff;
+  background: #3b3c3e;
   border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 93, 0.1);
 }
 
 footer .memberships {
@@ -1105,6 +1121,7 @@ footer .memberships .membership a {
   transition: 250ms ease;
   margin: 0.5em;
   padding: 0.5em;
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 93, 0.1);
 }
 
 footer .memberships .membership a:hover,
