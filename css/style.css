@@ -681,6 +681,7 @@ hr::before {
 .stylized {
   font-family: "sanies-script", cursive;
   font-weight: 400;
+  color: #000;
 }
 
 .stylized {
