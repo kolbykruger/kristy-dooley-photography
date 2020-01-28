@@ -18,6 +18,14 @@
 		background: linear-gradient(to right, transparent 0%, transparent 25%, #fff 100%);
 	}
 
+	@media (min-width: 1600px) {
+		background-image: url(../images/kristy-intro-large.jpg);
+
+		&::before {
+			background: linear-gradient(to right, transparent 0%, transparent 40%, #fff 100%);
+		}
+	}
+
 	.container {
 
 	}

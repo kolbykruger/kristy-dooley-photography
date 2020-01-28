@@ -1,9 +1,15 @@
-.instagram{
+.instagram {
+	margin: 0 auto;
+
+	.container {
+		max-width: 100%;
+		padding: 0;
+	}
 
 	.heading {
 	    width: 100%;
 	    margin: 0 0 1em;
 	    text-align: center;
 	}
-	
+
 }
