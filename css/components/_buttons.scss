@@ -71,8 +71,26 @@ $button-background: $color-0;
         border: 1px solid $button-background;
     }
     &-secondary {
+        color: #fff;
+        background: $color-1;
+        box-shadow: $box-shadow-1;
+
+        &:hover,
+        &:focus {
+            color: $color-0;
+            background: $color-4;
+        }
+    }
+    &-tertiary {
         color: inherit;
-        background: rgba(0,0,0,0.25);
+        background: $color-3;
+        box-shadow: $box-shadow-1;
+
+        &:hover,
+        &:focus {
+            color: $color-0;
+            background: $color-2;
+        }
     }
     &-text {
         color: $color-1;

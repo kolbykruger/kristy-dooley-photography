@@ -4,7 +4,7 @@
         sessionStorage.fonts = true;
       },
       google: {
-        families: ['Open+Sans:300,400,400i,500,600,700']
+        families: ['Roboto:300,300i,400,400i,500,600,700']
       },
       custom: {
         families: [
