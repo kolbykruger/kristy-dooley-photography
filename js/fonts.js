@@ -6,6 +6,14 @@
       google: {
         families: ['Open+Sans:300,400,400i,500,600,700']
       },
+      custom: {
+        families: [
+            'sanies-script',
+        ],
+        urls: [
+            '../fonts/sanies-script/sanies-script.css'
+        ]
+      },
       timeout: 2000
     };
 

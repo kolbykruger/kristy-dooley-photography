@@ -1,0 +1,48 @@
+.testimonials {
+
+    &.testimonials-widget {
+        padding: 3em 0;
+    }
+
+    .testimonial-slider {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .testimonial {
+        margin: 0 auto;
+        background: #fff;
+        text-align: center;
+        padding: 3em;
+        box-shadow: $box-shadow-1;
+
+        .quote {
+
+        }
+
+        .quotee {
+            margin-top: 1em;
+        }
+    }
+
+    .slick-arrows .next {
+        left: 100%;
+    }
+
+    .slick-arrows .prev {
+        right: 100%;
+        left: auto;
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 1em;
+
+        li {
+            margin: 0.25em;
+        }
+    }
+}

@@ -20,14 +20,18 @@
         display: block;
     }
 
-    @include fs(18px);
-    color: #fff;
+    &.button {
+        color: #fff;
+
+        i {
+            font-size: inherit;
+        }
+    }
+
+    @include fs(16px);
+    color: $color-0;
     text-decoration: none;
     transition: $transition-1;
-
-    &.button {
-        color: $color-0;
-    }
 }
 
 .nav a:hover,

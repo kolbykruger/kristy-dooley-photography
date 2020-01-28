@@ -1,10 +1,8 @@
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    //background: rgba(0,0,0,0.15);
-    //background: linear-gradient(to bottom, #000, transparent);
+    background: #fff;
+    box-shadow: $box-shadow-1;
+    height: 6.25em;
     z-index: 10;
 
     .container {
@@ -17,7 +15,7 @@
     }
 
     .logo {
-        max-width: 300px;
+        max-width: 250px;
 
         a {
             display: block;

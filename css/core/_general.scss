@@ -38,7 +38,9 @@ html.wf-inactive {
 body {
     color: $color-0;
     background-color: $color-grey-1;
-    background-image: url(../images/marble.jpg);
+    background-image: url(../images/patterns/cream_dust_@2X.png);
+    //background-image: url(../images/patterns/white_wall_hash_@2X.png);
+    background-repeat: repeat;
     font-family: 'Open Sans', sans-serif;
     @include fs(16px);
 }
@@ -201,4 +203,10 @@ hr::before {
 ::-moz-selection {
   background: $color-1;
   color: #fff;
+}
+
+.stylized {
+    @include fluid('font-size', 3rem, 5rem);
+    font-family: $font-1;
+    font-weight: 400;
 }
