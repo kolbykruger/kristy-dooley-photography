@@ -41,16 +41,16 @@ body {
     background-image: url(../images/patterns/cream_dust_@2X.png);
     //background-image: url(../images/patterns/white_wall_hash_@2X.png);
     background-repeat: repeat;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-0;
     @include fs(16px);
 }
 
 p {
-    @include fs(16px);
-    @include fluid('font-size', 0.875rem, 1rem);
+    @include fs(18px);
+    @include fluid('font-size', 1rem, 1.125rem);
     @include fluid('line-height', 1.4em, 1.6em);
     margin: 0 0 0.5em;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.6;
 }
 
@@ -71,13 +71,13 @@ h1 {
 h2 {
     @include fluid('font-size', 1.75rem, 2.5rem);
     @include fluid('line-height', 1em, 1.2em);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h3 {
     @include fluid('font-size', 1.25rem, 1.75rem);
     @include fluid('line-height', 1em, 1.2em);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h1,
@@ -203,6 +203,11 @@ hr::before {
 ::-moz-selection {
   background: $color-1;
   color: #fff;
+}
+
+.section-heading {
+    text-align: center;
+    margin: 1em auto;
 }
 
 .stylized {

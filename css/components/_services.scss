@@ -1,5 +1,5 @@
 .services {
-    margin: 0 auto;
+    margin: 0.5em;
 
     .container {
         max-width: 100%;
@@ -9,9 +9,9 @@
     .group.large {
 
         .item {
-            width: 50%;
-            //width: calc(50% - 2em);
-            //margin: 1em;
+            //width: 50%;
+            width: calc(50% - 1em);
+            margin: 0.5em;
         }
 
     }
@@ -19,9 +19,9 @@
     .group.small {
 
         .item {
-            width: 25%;
-            //width: calc(25% - 2em);
-            //margin: 1em;
+            //width: 25%;
+            width: calc(25% - 1em);
+            margin: 0.5em;
 
             h3 {
                 font-size: 1.25rem;
